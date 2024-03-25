@@ -1,0 +1,25 @@
+#homepage-body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#children-image {
+    width: 50vw;
+    margin: 10px;
+    align-content: center;
+    display: flex;
+}
+
+#welcome-message {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-title {
+    display: flex;
+    margin: 10px;
+    align-content: center;
+    width: 300px;;
+}

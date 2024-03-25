@@ -1,0 +1,44 @@
+#header-container {
+    background-color: #FFD2D5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#showcase-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.showcase-menu-element {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button-link {
+    color: white;
+    font-weight: bold;
+    background-color: #4F23E2;
+    border-radius: 15px;
+    height: 50px;
+    width: 120px;
+}
+
+.button-link:hover {
+    background-color: #8F6DFF;
+    cursor: pointer;
+}
+
+.button-link :active {
+    background-color: #8F6DFF;
+}
+
+.vertical-line {
+    border-left: 1px solid black;
+    height: 50px;
+}
+
+#header-logo {
+    width: 170px;
+}
