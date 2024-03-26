@@ -33,6 +33,7 @@ export default function TeamPage () {
         <div>
             <HeaderComp/>
             <div id="team-body-container">
+                {message ? <p style={{color:"red"}}>{message}</p> : ''}
                 {(content.length !== 0) && (
                   content.map((element, i) => (
                       <div id="member-container">

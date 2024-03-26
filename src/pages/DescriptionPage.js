@@ -28,6 +28,7 @@ export default function DescriptionPage () {
             <HeaderComp/>
             <div id="description-body-container">
                 <img id="logo-title" src={schoodLogo} alt="SCHOOD"/>
+                {message ? <p style={{color:"red"}}>{message}</p> : ''}
                 {(content.length !== 0) && (
                   content.map((element, i) => (
                       <div id="description-paragraph-container">

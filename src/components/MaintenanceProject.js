@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import "../CSS/maintenance.css"
 
 export default function MaintenanceProject () {
@@ -37,6 +37,8 @@ export default function MaintenanceProject () {
             setMessage(response.status + ' error : ' + response.statusText)
           } else {
             setMessage('Un nouveau paragraphe a été ajouté à la description')
+            setProjectDescription('')
+            setProjectName('')
           }
         })
           .catch(error => setMessage(error.message))
@@ -49,6 +51,7 @@ export default function MaintenanceProject () {
             <input type="text" id="project-name" placeholder='Titre du paragraphe' value={projectName} onChange={handleProjectName}/>
             <textarea id="project-description" placeholder="Contenu du paragraphe" value={projectDescription} onChange={handleProjectDescription}/>
             <button type="submit" onClick={handleNewProject}>Ajouter</button>
+            {message ? <p style={{color:"red"}}>{message}</p> : ''}
         </div>
     )
 }

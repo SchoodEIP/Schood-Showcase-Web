@@ -12,6 +12,8 @@ export default function TimelinePage () {
     const [message, setMessage] = useState('')
     const [currentDate, setCurrentDate] = useState("")
 
+    let iconType;
+
     useEffect(() => {
         const projectURL = process.env.REACT_APP_BACKEND_URL + '/timeline'
 
@@ -32,10 +34,10 @@ export default function TimelinePage () {
         <div>
             <HeaderComp/>
             <div id="timeline-body-container">
+                {message ? <p style={{color:"red"}}>{message}</p> : ''}
                 <div className="timeline-icon"></div>
                 {(content.length !== 0) && (
                     content.map((element, index) => {
-                        let iconType
                         const newDate = new Date(element.date)
                         if ((currentDate.getFullYear() < newDate.getFullYear())
                             || ((currentDate.getFullYear() === newDate.getFullYear()) && ((currentDate.getMonth() < newDate.getMonth())

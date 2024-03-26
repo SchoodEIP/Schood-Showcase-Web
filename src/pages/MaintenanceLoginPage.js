@@ -80,6 +80,7 @@ export default function MaintenancePage () {
                         <input type="text" id="email-input" placeholder='email' value={email} onChange={handleEmailChange} required/>
                         <input type="password" id="password-input" placeholder='*****' value={password} onChange={handlePasswordChange} required/>
                         <button type="submit" onClick={handleLogin}>Login</button>
+                        {message ? <p style={{color:"red"}}>{message}</p> : ''}
                     </div>
                 </div>
             </div>

@@ -7,11 +7,11 @@ import MaintenanceTeam from '../components/MaintenanceTeam';
 import MaintenanceTimeline from '../components/MaintenanceTimeline';
 
 export default function MaintenancePage () {
-
     const handleLogout = () => {
         sessionStorage.removeItem("maintenanceToken")
         window.location.href = '/maintenance'
     }
+
     return (
         <div>
             <HeaderComp/>

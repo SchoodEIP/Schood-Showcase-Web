@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import "../CSS/maintenance.css"
 
 export default function MaintenanceTimeline () {
@@ -42,6 +42,9 @@ export default function MaintenanceTimeline () {
             setMessage(response.status + ' error : ' + response.statusText)
           } else {
             setMessage('Un nouveau membre a été ajouté à l\'équipe')
+            setDate('')
+            setDescription('')
+            setFeatures('')
           }
         })
           .catch(error => setMessage(error.message))
@@ -55,6 +58,7 @@ export default function MaintenanceTimeline () {
             <input placeholder='Description' type="text" id="description-input" value={description} onChange={handleDescriptionChange} />
             <input placeholder="Features" type="text" id="features-input" value={features} onChange={handleFeaturesChange} />
             <button type="submit" onClick={handleNewTimeline}>Ajouter</button>
+            {message ? <p style={{color:"red"}}>{message}</p> : ''}
         </div>
     )
 }

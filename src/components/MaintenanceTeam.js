@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import "../CSS/maintenance.css"
 
 export default function MaintenanceTeam () {
@@ -62,6 +62,11 @@ export default function MaintenanceTeam () {
             setMessage(response.status + ' error : ' + response.statusText)
           } else {
             setMessage('Un nouveau membre a été ajouté à l\'équipe')
+            setBase64('')
+            setDescription('')
+            setFirstName('')
+            setLastName('')
+            setRole('')
           }
         })
           .catch(error => setMessage(error.message))
@@ -74,10 +79,11 @@ export default function MaintenanceTeam () {
             <input type="text" id="member-firstname" placeholder="Prénom" value={firstName} onChange={handleFirstName}/>
             <input type="text" id="member-lastname" placeholder="Nom" value={lastName} onChange={handleLastName}/>
             <input type='file' accept='.jpg, .jpeg, .png' id="member-picture" onChange={handlePicture}/>
-            {base64 && <img id="team-image" src={base64} alt={"uploaded image"}/>}
+            {base64 && <img id="team-image" src={base64} alt={"uploadedimage"}/>}
             <input type="text" id="member-role" placeholder="Rôle" value={role} onChange={handleRole}/>
             <input type="text" id="member-description" placeholder="Description" value={description} onChange={handleDescription}/>
             <button type="submit" onClick={handleNewMember}>Ajouter</button>
+            {message ? <p style={{color:"red"}}>{message}</p> : ''}
         </div>
     )
 }

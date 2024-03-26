@@ -1,0 +1,82 @@
+/* Date */
+(avril 2023 – juin 2023)
+/*description*/
+Test & Learn
+/*features*/
+Développement du projet
+Mise en place d'outils d'intégration
+Bonne couverture de tests
+Mettre en place une organisation
+-------------------------
+Ce premier sprint de trois mois a pour but de vous placer dans une situation où vous devez
+développer votre projet en suivant une organisation, en essayant diverses méthodologies,
+méthodes d’organisations internes, et moyens de communications, afin que vous trouviez ce qui
+vous convient le mieux et vous permet d’être les plus productifs possibles.
+Comme indiqué par le nom du sprint, il s’agit donc de tester, et d’en tirer les leçons.
+En outre, il est attendu que des outils d’intégration continue (ou « CI » pour « Continuous
+Integration ») soient en place sur chaque partie de votre projet. Cela implique donc d’avoir une
+bonne couverture de tests (unitaires, fonctionnels et d’intégration) sur votre projet.
+---------------------------
+/* Date */
+(juillet 2023 – octobre 2023)
+/*description*/
+Management & Processes
+/*features*/
+Développement du projet
+Structurer et pérenniser l'organisation mise en place
+-------------------------
+Forts de votre expérimentation lors du sprint précédent, l’objectif de celui-ci (d’une durée de
+quatre mois) sera de véritablement structurer et pérenniser l’organisation que vous avez mis en
+place.
+Nous attendrons que vous présentiez les particularités de votre gestion de projet, ainsi que votre
+gestion des désaccords ou des conflits internes au groupe.
+---------------------------
+/* Date */
+(novembre 2023 – janvier 2024)
+/*description*/
+Fast Forward
+/*features*/
+Avancer significativement sur le projet
+--------------------------
+L’objectif de ce troisième sprint, d’une durée de trois mois, est d’avoir une avancée significative
+dans le développement de votre projet.
+Lors des sprints précédents, vous avez eu l’occasion d’expérimenter autour de votre projet et de
+sa gestion, ainsi que de structurer cela afin de créer des automatismes et des méthodes saines de
+fonctionnement entre vous. Il est donc maintenant temps de mettre cela à profit, et de démontrer
+que cela vous permet désormais d’être plus efficaces dans le développement de votre projet.
+---------------------------
+/* Date */
+ (février 2024 – mai 2024)
+/*description*/
+Beta & Growth Hacking
+/*features*/
+-------------------------
+Suite au sprint Fast Forward, vous devez normalement avoir eu une avancée notable sur votre
+projet, qui a dû vous permettre de pouvoir envisager de communiquer sérieusement auprès des
+utilisateurs cibles de votre projet.
+L’objectif de ce sprint de quatre mois est donc de faire de l’acquisition utilisateur (Growth
+Hacking) en vue de lancer votre bêta au mois de mai 2024.
+Cette bêta doit être cohérente avec l’avancement de votre projet à cette période, vous devez
+donc choisir entre une bêta publique ou une bêta privée en fonction de cela.
+---------------------------
+/* Date */
+  (juin 2024 – septembre 2024)
+/*description*/
+Consolidation
+/*features*/
+Au sprint précédent, vous avez acquis des utilisateurs, et votre bêta a été lancée. Il est donc
+désormais temps d’écouter vos utilisateurs et de prendre en compte leurs retours.
+Nous attendrons donc de vous que vous nous présentiez vos chiffres (utilisateurs recrutés,
+statistiques d’utilisation du projet) ainsi qu’une synthèse des retours qui vous ont été remontés.
+---------------------------
+
+/* Date */
+octobre 2024 à decembre 2024
+/*description*/
+Launch & Metrics
+/*features*/
+La fin de votre EIP approche, vous avez lancé votre bêta, recruté des utilisateurs, avez étudié leur
+comportement et avez pris en compte leurs retours. Il est donc désormais temps de lancer, à
+proprement parler, votre projet et de mettre en place les outils nécessaires au suivi d’un projet
+en production.
+Le développement devra naturellement continuer durant ce sprint.
