@@ -5,6 +5,10 @@ import iconFb from "../assets/iconCircleFb.png"
 import iconMail from "../assets/iconCircleMail.png"
 
 export default function FooterComp () {
+    const fbLink = "https://www.facebook.com/profile.php?id=100087044937576"
+    const handleNavigation = (event) => {
+        window.location.href = event
+    }
     return (
         <div id="footer-container">
             <div id="contact-container">
@@ -16,7 +20,7 @@ export default function FooterComp () {
             </div>
             <div id="mobile-media-container">
                 <img className="footer-icon" id="mail-btn" src={iconMail} alt="mail"/>
-                <img className="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
+                <img onClick={() => handleNavigation(fbLink)} className="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
                 <div className="footer-vertical-line"/>
                 <img className="footer-icon" src={apkDownload} alt="mobile version"/>
             </div>

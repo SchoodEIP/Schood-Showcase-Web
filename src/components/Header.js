@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import '../CSS/header.css'
 import schoodLogo from '../assets/logo_schood.png'
 
 export default function HeaderComp () {
     const handleNavigation = (event) => {
-        console.log(event)
         window.location.href = event
     }
+
     return (
         <div id="header-container">
             <div id="logo-container">
-                <img id="header-logo" src={schoodLogo} alt="Schood"/>
+                <img style={{cursor: 'pointer'}} id="header-logo" onClick={() => handleNavigation("/")} src={schoodLogo} alt="Schood"/>
             </div>
             <div id="showcase-menu">
                 <button onClick={() => handleNavigation("/")} className="button-link showcase-menu-element">Accueil</button>
