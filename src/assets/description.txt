@@ -1,0 +1,12 @@
+/* name */
+Pour une école plus sûre, une meilleure entente et un plus bel avenir pour les adultes de demain.
+
+/* description */
+<p id="paragraph-title">C'est quoi Schood ?</p>
+
+<p id="paragraph-content">Schood, cest un collecteur de ressentis en milieu scolaire.
+Il  s'agit d'un questionnaire que les étudiants viennent remplir de manière  hebdomadaire, qui demande l’émotion globale de la semaine et des  questions générales pour cerner un potentiel problème dans une catégorie  bien précise.</p>
+
+<p id="paragraph-title">Notre Objectif</p>
+
+<p id="paragraph-content">Mettre en place une écoute et une synthèse des ressentis des jeunes de manière hebdomadaire et accessible.</p>

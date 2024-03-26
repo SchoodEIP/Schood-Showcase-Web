@@ -1,0 +1,39 @@
+#logo-title {
+    width: 30%;
+    text-align: center;
+}
+
+#description-body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#description-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 70%;
+}
+
+#paragraph-title {
+    display: flex;
+    color: #B74CEA;
+    font-size: x-large;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+    text-align: center;
+}
+
+#paragraph-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}

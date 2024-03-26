@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -7,6 +7,8 @@ import HomePage from './pages/HomePage';
 import DescriptionPage from './pages/DescriptionPage';
 import TeamPage from './pages/TeamPage';
 import TimelinePage from './pages/TimelinePage';
+import MaintenancePage from './pages/MaintenancePage';
+import MaintenanceLoginPage from './pages/MaintenanceLoginPage';
 const rootElement = document.getElementById('root')
 
 if (rootElement) {
@@ -14,6 +16,16 @@ if (rootElement) {
   root.render(
     <Router>
         <Routes>
+          {sessionStorage.getItem('maintenanceToken') === null && (
+            <>
+              <Route path='/maintenance' element={<MaintenanceLoginPage/>}/>
+            </>
+          )}
+          {sessionStorage.getItem('maintenanceToken') !== null && (
+            <>
+              <Route path='/maintenance' element={<MaintenancePage/>}/>
+            </>
+          )}
           <>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/description' element={<DescriptionPage/>}/>

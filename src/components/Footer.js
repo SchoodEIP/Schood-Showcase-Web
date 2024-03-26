@@ -12,13 +12,13 @@ export default function FooterComp () {
                     <div>Schood 2024</div>
                     <div>contact: schood.eip@gmail.com</div>
                 </div>
-                <div class="footer-vertical-line"/>
+                <div className="footer-vertical-line"/>
             </div>
             <div id="mobile-media-container">
-                <img class="footer-icon" id="mail-btn" src={iconMail} alt="mail"/>
-                <img class="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
-                <div class="footer-vertical-line"/>
-                <img class="footer-icon" src={apkDownload} alt="mobile version"/>
+                <img className="footer-icon" id="mail-btn" src={iconMail} alt="mail"/>
+                <img className="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
+                <div className="footer-vertical-line"/>
+                <img className="footer-icon" src={apkDownload} alt="mobile version"/>
             </div>
         </div>
     )

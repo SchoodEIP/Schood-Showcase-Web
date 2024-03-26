@@ -1,0 +1,81 @@
+#timeline-body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 25px;
+    margin-bottom: 150px;
+}
+
+#timeline-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 15%;
+}
+
+.icon-background {
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 10px #4F23E2 solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.timeline-icon {
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.timeline-icon:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 10px;
+    height: 200%;
+    background-color: #4F23E2;
+    align-items: center;
+    display: flex;
+}
+
+.icon-style {
+    width: 35px;
+}
+
+.timeline-card-content {
+    position: relative;
+    border-bottom: 5px #4F23E2 solid;
+    border-top: 5px #4F23E2 solid;
+    max-width: 400px;
+    word-wrap: normal;
+}
+
+.content-left {
+    margin-left: -300px;
+}
+
+.content-right {
+    margin-left: 120px;
+}
+
+.timeline-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    margin-top: 0;
+    font-size: larger;
+    font-weight: bold;
+}
