@@ -18,7 +18,7 @@ export default function HeaderComp () {
                 <button onClick={() => handleNavigation("/team")} className="button-link showcase-menu-element">L'équipe</button>
                 <button onClick={() => handleNavigation("/timeline")} className="button-link showcase-menu-element">Timeline</button>
                 <div className="vertical-line showcase-menu-element"/>
-                <button onClick={() => handleNavigation("https://www.schood.fr")} className="button-link showcase-menu-element">Demo</button>
+                <button onClick={() => handleNavigation("https://demo.schood.fr")} className="button-link showcase-menu-element">Demo</button>
             </div>
         </div>
     )
