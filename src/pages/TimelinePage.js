@@ -50,32 +50,31 @@ export default function TimelinePage () {
                             iconType = done
                         }
                         const isEvenIndex = index % 2 === 0;
-                        const contentAlignClass = isEvenIndex ? 'content-left' : 'content-right';
                         const showFromDate = months[fromDate.getMonth()] + " " + fromDate.getFullYear()
                         const showToDate = months[toDate.getMonth()] + " " + toDate.getFullYear()
                         if (isEvenIndex) {
                             return (
-                                <div key={index} id="timeline-container">
-                                    <div className="icon-background timeline-icon">
-                                        <img className="icon-style" src={iconType} alt="icon"/>
-                                    </div>
-                                    <div className={`timeline-card-content ${contentAlignClass}`}>
-                                        <p class="timeline-title">{element.title}</p>
-                                        <p class="timeline-date">{showFromDate + " - " + showToDate}</p>
+                                <div key={index} className="timeline-container content-left">
+                                    <div className={`timeline-card-content`}>
+                                        <p className="timeline-title">{element.title}</p>
+                                        <p className="timeline-date">{showFromDate + " - " + showToDate}</p>
                                         <p>{element.description}</p>
+                                    </div>
+                                    <div className="icon-background timeline-icon icon-left">
+                                        <img className="icon-style" src={iconType} alt="icon"/>
                                     </div>
                                 </div>
                             )
                         } else {
                             return (
-                                <div key={index} id="timeline-container">
-                                    <div className={`timeline-card-content ${contentAlignClass}`}>
-                                        <p class="timeline-title">{element.title}</p>
-                                        <p class="timeline-date">{showFromDate + " - " + showToDate}</p>
-                                        <p>{element.description}</p>
-                                    </div>
-                                    <div className="icon-background timeline-icon">
+                                <div key={index} className="timeline-container content-right">
+                                    <div className="icon-background timeline-icon icon-right">
                                         <img className="icon-style" src={iconType} alt="icon"/>
+                                    </div>
+                                    <div className={`timeline-card-content`}>
+                                        <p className="timeline-title">{element.title}</p>
+                                        <p className="timeline-date">{showFromDate + " - " + showToDate}</p>
+                                        <p>{element.description}</p>
                                     </div>
                                 </div>
                             )
