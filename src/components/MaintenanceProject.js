@@ -22,7 +22,7 @@ export default function MaintenanceProject () {
             "description": projectDescription,
             "contacts": []
         }
-        console.log(payload)
+
         const projectURL = process.env.REACT_APP_BACKEND_URL + '/project'
 
         fetch(projectURL, {

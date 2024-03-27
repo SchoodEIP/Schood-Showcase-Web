@@ -44,7 +44,6 @@ export default function MaintenancePage () {
             "email": email,
             "password": password
         }
-        console.log("data: ", payload)
 
         try {
             const response = await fetch(baseUrl, {

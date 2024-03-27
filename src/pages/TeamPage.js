@@ -24,7 +24,6 @@ export default function TeamPage () {
         }).then(response => response.json())
             .then(data => {
                 setContent(data)
-                console.log(data)
             })
             .catch(error => /* istanbul ignore next */ {setMessage(error.message)})
     }, [])
