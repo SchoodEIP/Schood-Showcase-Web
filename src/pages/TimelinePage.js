@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import HeaderComp from '../components/Header'
 import FooterComp from '../components/Footer'
 import "../CSS/timeline.css"
-import moment from 'moment'
 import done from "../assets/done.png"
 import in_progress from "../assets/in_progress.png"
 import to_do from "../assets/to_do.png"
@@ -11,6 +10,7 @@ export default function TimelinePage () {
     const [content, setContent] = useState([])
     const [message, setMessage] = useState('')
     const [currentDate, setCurrentDate] = useState("")
+    const months = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 
     let iconType;
 
@@ -38,21 +38,21 @@ export default function TimelinePage () {
                 <div className="timeline-icon"></div>
                 {(content.length !== 0) && (
                     content.map((element, index) => {
-                        const newDate = new Date(element.date)
-                        if ((currentDate.getFullYear() < newDate.getFullYear())
-                            || ((currentDate.getFullYear() === newDate.getFullYear()) && ((currentDate.getMonth() < newDate.getMonth())
-                            || ((currentDate.getMonth() === newDate.getMonth()) && (currentDate.getDate() < newDate.getDate()))))) {
+                        const fromDate = new Date(element.fromDate)
+                        const toDate = new Date(element.toDate)
+                        if ((currentDate.getFullYear() < fromDate.getFullYear())
+                            || ((currentDate.getFullYear() === fromDate.getFullYear()) && ((currentDate.getMonth() < fromDate.getMonth())))) {
                             iconType = to_do
-                        } else if ((currentDate.getFullYear() > newDate.getFullYear())
-                            || ((currentDate.getFullYear() === newDate.getFullYear()) && ((currentDate.getMonth() > newDate.getMonth())
-                            || ((currentDate.getMonth() === newDate.getMonth()) && (currentDate.getDate() > newDate.getDate()))))) {
-                            iconType = done
-                        } else {
+                        } else if ((currentDate.getFullYear() >= fromDate.getFullYear()) && (currentDate.getFullYear() <= toDate.getFullYear())
+                            && (((currentDate.getMonth() >= fromDate.getMonth()) && (currentDate.getMonth() <= toDate.getMonth())))) {
                             iconType = in_progress
+                        } else {
+                            iconType = done
                         }
                         const isEvenIndex = index % 2 === 0;
                         const contentAlignClass = isEvenIndex ? 'content-left' : 'content-right';
-
+                        const showFromDate = months[fromDate.getMonth()] + " " + fromDate.getFullYear()
+                        const showToDate = months[toDate.getMonth()] + " " + toDate.getFullYear()
                         if (isEvenIndex) {
                             return (
                                 <div key={index} id="timeline-container">
@@ -60,9 +60,9 @@ export default function TimelinePage () {
                                         <img className="icon-style" src={iconType} alt="icon"/>
                                     </div>
                                     <div className={`timeline-card-content ${contentAlignClass}`}>
-                                        <p class="timeline-title">{element.description}</p>
-                                        <p class="timeline-date">{moment(element.date).format('DD/MM/YY') + " - " + moment(element.date).format('DD/MM/YY')}</p>
-                                        <p>{element.newFeatures}</p>
+                                        <p class="timeline-title">{element.title}</p>
+                                        <p class="timeline-date">{showFromDate + " - " + showToDate}</p>
+                                        <p>{element.description}</p>
                                     </div>
                                 </div>
                             )
@@ -70,9 +70,9 @@ export default function TimelinePage () {
                             return (
                                 <div key={index} id="timeline-container">
                                     <div className={`timeline-card-content ${contentAlignClass}`}>
-                                        <p class="timeline-title">{element.description}</p>
-                                        <p class="timeline-date">{moment(element.date).format('DD/MM/YY') + " - " + moment(element.date).format('DD/MM/YY')}</p>
-                                        <p>{element.newFeatures}</p>
+                                        <p class="timeline-title">{element.title}</p>
+                                        <p class="timeline-date">{showFromDate + " - " + showToDate}</p>
+                                        <p>{element.description}</p>
                                     </div>
                                     <div className="icon-background timeline-icon">
                                         <img className="icon-style" src={iconType} alt="icon"/>

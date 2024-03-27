@@ -2,15 +2,24 @@ import React, {useState} from 'react'
 import "../CSS/maintenance.css"
 
 export default function MaintenanceTimeline () {
-    const [date, setDate] = useState("")
+    const [fromDate, setFromDate] = useState("")
+    const [toDate, setToDate] = useState("")
     const [description, setDescription] = useState('')
     const [features, setFeatures] = useState("")
+    const [title, setTitle] = useState("")
     const [message, setMessage] = useState('')
 
-    const handleDateChange = (event) => {
-        setDate(event.target.value)
+    const handleFromDateChange = (event) => {
+        setFromDate(event.target.value)
     }
 
+    const handleToDateChange = (event) => {
+      setToDate(event.target.value)
+    }
+
+    const handleTitleChange = (event) => {
+      setTitle(event.target.value)
+    }
     const handleDescriptionChange = (event) => {
         setDescription(event.target.value)
     }
@@ -23,7 +32,9 @@ export default function MaintenanceTimeline () {
         event.preventDefault();
 
         const payload = {
-            "date": date,
+            "title": title,
+            "fromDate": fromDate,
+            "toDate": toDate,
             "description": description,
             "newFeatures": [features]
         }
@@ -41,10 +52,12 @@ export default function MaintenanceTimeline () {
           if (response.status !== 200) {
             setMessage(response.status + ' error : ' + response.statusText)
           } else {
-            setMessage('Un nouveau membre a été ajouté à l\'équipe')
-            setDate('')
+            setMessage('Une nouvelle étape a été ajoutée')
+            setFromDate('')
+            setToDate('')
             setDescription('')
             setFeatures('')
+            setTitle('')
           }
         })
           .catch(error => setMessage(error.message))
@@ -54,7 +67,15 @@ export default function MaintenanceTimeline () {
         <div id="timeline-maintenance-container">
             <h1>Timeline Content</h1>
             <div id="response-container"></div>
-            <input type="date" id="date-input" value={date} onChange={handleDateChange} />
+            <label>
+              Du:
+              <input type="date" id="date-input" value={fromDate} onChange={handleFromDateChange} title="Au:" />
+            </label>
+            <label>
+              Au:
+              <input type="date" id="date-input" value={toDate} onChange={handleToDateChange} title="Du:"/>
+            </label>
+            <input placeholder='Title' type="text" id="title-input" value={title} onChange={handleTitleChange} />
             <input placeholder='Description' type="text" id="description-input" value={description} onChange={handleDescriptionChange} />
             <input placeholder="Features" type="text" id="features-input" value={features} onChange={handleFeaturesChange} />
             <button type="submit" onClick={handleNewTimeline}>Ajouter</button>
