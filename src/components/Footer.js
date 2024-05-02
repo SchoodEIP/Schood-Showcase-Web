@@ -5,7 +5,7 @@ import iconFb from "../assets/iconCircleFb.png"
 import iconMail from "../assets/iconCircleMail.png"
 
 export default function FooterComp () {
-    const [downloadAPK, setDownloadAPK] = useState()
+    const [downloadAPKURL, setDownloadAPKURL] = useState("")
 
     const fbLink = "https://www.facebook.com/profile.php?id=100087044937576"
     const handleNavigation = (event) => {
@@ -15,9 +15,9 @@ export default function FooterComp () {
     useEffect(() => {
         downloadApk()
         .then((data) => {
-            setDownloadAPK(data)
+            setDownloadAPKURL(data)
         })
-    })
+    }, [])
 
     const downloadApk = async () => {
         try {
@@ -49,7 +49,7 @@ export default function FooterComp () {
                 <img className="footer-icon" id="mail-btn" src={iconMail} alt="mail"/>
                 <img onClick={() => handleNavigation(fbLink)} className="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
                 <div className="footer-vertical-line"/>
-                <a href={downloadAPK}>
+                <a href={downloadAPKURL}>
                     <img className="footer-icon" src={apkDownload} alt="mobile version" />
                 </a>
             </div>
