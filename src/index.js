@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.css';
+import './CSS/index.css';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './pages/HomePage';
 import DescriptionPage from './pages/DescriptionPage';
