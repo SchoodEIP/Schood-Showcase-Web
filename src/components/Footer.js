@@ -49,7 +49,7 @@ export default function FooterComp () {
                 <img className="footer-icon" id="mail-btn" src={iconMail} alt="mail"/>
                 <img onClick={() => handleNavigation(fbLink)} className="footer-icon" id="fb-btn" src={iconFb} alt="facebook"/>
                 <div className="footer-vertical-line"/>
-                <a href={downloadAPKURL}>
+                <a href="https://mega.nz/file/QNRRQDwC#y7GdhHCJIS17e9LQN9yHtq-TNnsKEmIqwYzA1xSkOnc" target="_blank">
                     <img className="footer-icon" src={apkDownload} alt="mobile version" />
                 </a>
             </div>
