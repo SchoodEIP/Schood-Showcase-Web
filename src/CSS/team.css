@@ -16,11 +16,12 @@
 }
 
 #member-container {
-    width: 350px;
+    width: 32%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
 }
