@@ -1,0 +1,81 @@
+/* Date */
+(avril 2023 – juin 2023)
+/*description*/
+Test & Learn
+/*features*/
+Développement du projet
+Mise en place d'outils d'intégration
+Bonne couverture de tests
+Mettre en place une organisation
+-------------------------
+Le but de ce sprint est de placer notre équipe dans une situation où nous devons développer
+notre projet en suivant une organisation, en essayant diverses méthodologies, méthodes d’organisations
+internes, et moyens de communications, afin que nous puissions trouver ce qui nous convient le mieux et nous permette
+d'être les plus productifs possible.
+Des outils d’intégration continue (ou « CI » pour « Continuous Integration ») doivent être mis en place sur
+chaque partie du projet. Cela implique donc d’avoir une bonne couverture de tests (unitaires, fonctionnels
+et d’intégration) sur notre projet.
+---------------------------
+/* Date */
+(juillet 2023 – octobre 2023)
+/*description*/
+Management & Processes
+/*features*/
+Développement du projet
+Structurer et pérenniser l'organisation mise en place
+-------------------------
+Ce sprint a pour objectif  de véritablement structurer et pérenniser l’organisation qui a été mise en
+place.
+Les particularités de la gestion du projet, ainsi que la gestion des désaccords ou des conflits internes
+au groupe est à présenter.
+-------------------------
+/* Date */
+(novembre 2023 – janvier 2024)
+/*description*/
+Fast Forward
+/*features*/
+Avancer significativement sur le projet
+--------------------------
+L'objectif de ce troisième sprint est d’avoir une avancée significative dans le développement du projet SCHOOD.
+Lors des sprints précédents, nous avons eu l’occasion d’expérimenter autour de son projet et de
+sa gestion, ainsi que de structurer cela afin de créer des automatismes et des méthodes saines de
+fonctionnement entre nos membres. Il est donc maintenant temps de mettre cela à profit, et de démontrer
+que cela nous permet désormais d’être plus efficace dans le développement de notre projet.
+
+---------------------------
+/* Date */
+ (février 2024 – mai 2024)
+/*description*/
+Beta & Growth Hacking
+/*features*/
+-------------------------
+Suite au sprint Fast Forward, nous devons normalement avoir eu une avancée notable sur notre
+projet, qui a dû nous permettre de pouvoir envisager de communiquer sérieusement auprès des
+utilisateurs cibles de notre projet.
+L’objectif de ce sprint de quatre mois est donc de faire de l’acquisition utilisateur (Growth
+Hacking) en vue de lancer notre bêta au mois de mai 2024.
+Cette bêta doit être cohérente avec l’avancement de notre projet à cette période, nous devons
+donc choisir entre une bêta publique ou une bêta privée en fonction de cela.
+---------------------------
+/* Date */
+  (juin 2024 – septembre 2024)
+/*description*/
+Consolidation
+/*features*/
+---------------------------
+Au sprint précédent, nous avons acquis des utilisateurs, et notre bêta a été lancée. Il est donc
+désormais temps d’écouter nos utilisateurs et de prendre en compte leurs retours.
+Il est donc attendu de nous que nous présentions nos chiffres (utilisateurs recrutés,
+statistiques d’utilisation du projet) ainsi qu’une synthèse des retours qui nous ont été remontés.
+---------------------------
+/* Date */
+octobre 2024 à decembre 2024
+/*description*/
+Launch & Metrics
+/*features*/
+---------------------------
+La fin de notre EIP approche, nous avons lancé notre bêta, recruté des utilisateurs, avons étudié leur
+comportement et avons pris en compte leurs retours. Il est donc désormais temps de lancer, à
+proprement parler, notre projet et de mettre en place les outils nécessaires au suivi d’un projet
+en production.
+Le développement continue naturellement durant ce sprint.
