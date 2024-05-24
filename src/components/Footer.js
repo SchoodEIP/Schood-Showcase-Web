@@ -5,35 +5,9 @@ import iconFb from "../assets/iconCircleFb.png"
 import iconMail from "../assets/iconCircleMail.png"
 
 export default function FooterComp () {
-    const [downloadAPKURL, setDownloadAPKURL] = useState("")
-
     const fbLink = "https://www.facebook.com/profile.php?id=100087044937576"
     const handleNavigation = (event) => {
         window.location.href = event
-    }
-
-    useEffect(() => {
-        downloadApk()
-        .then((data) => {
-            setDownloadAPKURL(data)
-        })
-    }, [])
-
-    const downloadApk = async () => {
-        try {
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/downloadapk`, {
-              method: 'GET',
-            })
-            if (response.status !== 200) /* istanbul ignore next */ {
-              throw new Error("Erreur lors de l'envoi du message.")
-            } else {
-              const blob = await response.blob()
-              const objectURL = URL.createObjectURL(blob)
-              return objectURL
-            }
-          } catch (e) /* istanbul ignore next */ {
-            console.error(e)
-          }
     }
 
     return (
