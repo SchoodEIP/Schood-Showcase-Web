@@ -15,6 +15,9 @@ export default function HomePage () {
                 </div>
                 <div id="welcome-message">
                     <img id="welcome-title" src={welcomeTitle} alt="Welcome to Schood"/>
+                    <a id="download-btn-desktop" href="https://mega.nz/file/pNRGUQ7b#kpRac_kW5JeCB-Ruu3xIOxwUP7iybLHzb0q-BpErA54" target="_blank">
+                        Télécharger l'application Bureau
+                    </a>
                 </div>
             </div>
             <FooterComp/>
