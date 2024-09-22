@@ -19,47 +19,9 @@ export default function NewsPage () {
         }
       }).then(response => response.json())
         .then(data => {
-        //   setContent(data)
+          setContent(data)
     })
     .catch(error => /* istanbul ignore next */ {setMessage(error.message)})
-    // setContent([
-    //     {
-    //         name: 'Début de la bêta',
-    //         content: 'Ceci est le début de la bêta, rejoignez nous!'
-    //     },
-    //     {
-    //         name: '1 semaine dans la bêta',
-    //         content: 'ça fait une semaine que la bêta a commencé'
-    //     },
-    //     {
-    //         name: 'Fin de la bêta',
-    //         content: 'Merci à tous nos bêta testeurs'
-    //     },
-    //     {
-    //         name: 'Début de la bêta',
-    //         content: 'Ceci est le début de la bêta, rejoignez nous!'
-    //     },
-    //     {
-    //         name: '1 semaine dans la bêta',
-    //         content: 'ça fait une semaine que la bêta a commencé'
-    //     },
-    //     {
-    //         name: 'Fin de la bêta',
-    //         content: 'Merci à tous nos bêta testeurs'
-    //     },
-    //     {
-    //         name: 'Début de la bêta',
-    //         content: 'Ceci est le début de la bêta, rejoignez nous!'
-    //     },
-    //     {
-    //         name: '1 semaine dans la bêta',
-    //         content: 'ça fait une semaine que la bêta a commencé'
-    //     },
-    //     {
-    //         name: 'Fin de la bêta',
-    //         content: 'Merci à tous nos bêta testeurs'
-    //     }
-    // ])
     }, [])
 
     return (
@@ -74,7 +36,7 @@ export default function NewsPage () {
                     content.map((element, i) => (
                         <div id="post-container">
                             <div id="post-top">
-                                <h2 id="post-title">{element.name}</h2>
+                                <h2 id="post-title">{element.title}</h2>
                                 <span>{moment(element.date).format('DD/MM/YYYY')}</span>
                             </div>
                             <div id="post-content" dangerouslySetInnerHTML={{__html: element.content}}></div>
