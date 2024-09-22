@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import DescriptionPage from './pages/DescriptionPage';
 import TeamPage from './pages/TeamPage';
 import TimelinePage from './pages/TimelinePage';
+import NewsPage from './pages/NewsPage';
 import MaintenancePage from './pages/MaintenancePage';
 import MaintenanceLoginPage from './pages/MaintenanceLoginPage';
 const rootElement = document.getElementById('root')
@@ -31,6 +32,7 @@ if (rootElement) {
             <Route path='/description' element={<DescriptionPage/>}/>
             <Route path='/team' element={<TeamPage/>}/>
             <Route path='/timeline' element={<TimelinePage/>}/>
+            <Route path='/news' element={<NewsPage/>}/>
           </>
         </Routes>
     </Router>

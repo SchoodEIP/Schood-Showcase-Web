@@ -5,6 +5,7 @@ import "../CSS/maintenance.css"
 import MaintenanceProject from '../components/MaintenanceProject';
 import MaintenanceTeam from '../components/MaintenanceTeam';
 import MaintenanceTimeline from '../components/MaintenanceTimeline';
+import MaintenanceNews from "../components/MaintenanceNews";
 
 export default function MaintenancePage () {
     const handleLogout = () => {
@@ -21,6 +22,7 @@ export default function MaintenancePage () {
                 <MaintenanceProject/>
                 <MaintenanceTeam/>
                 <MaintenanceTimeline/>
+                <MaintenanceNews/>
             </div>
             <FooterComp/>
         </div>
