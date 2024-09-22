@@ -18,7 +18,7 @@ export default function MaintenanceNews () {
         event.preventDefault();
 
         const payload = {
-            "name": postName,
+            "title": postName,
             "content": postContent,
         }
 
